@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News and Public Announcements</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <script src="script.js" defer></script>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around; /* Adjust as needed */
+        background-color: lightblue;
+        padding: 20px;
+        margin-top: 20px; /* Add margin for spacing */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+      }
+
+      .announcement {
+        text-align: center;
+        width: calc(50% - 20px); /* Adjust width as needed */
+        margin: 10px; /* Add margin for spacing between items */
+        padding: 10px; /* Add padding for spacing */
+        background-image: lightblue; /* Set background color for content items */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .announcement img {
+        width: 80px; /* Adjust as needed */
+        height: auto;
+        margin-bottom: 10px; /* Add margin for spacing */
+      }
+
+      .announcement h3 {
+        margin-top: 0; /* Remove default margin for consistency */
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px; /* Add margin for spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Latest News and Public Announcements</h1>
+
+    <div id="divmenu" class="master">
+      <nav id="navmenu">
+        <ul id="ulmenu">
+          <li><a href="MJSS.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="documents.html">DOCUMENTS</a></li>
+          <li><a href="news.html">NEWS&PUBLIC NOTICES</a></li>
+
+          <li><a href="contacts.html">CONTACT US</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <!-- Icon and Information Section -->
+      <div class="announcement">
+        <img src="public announcement.jpg" alt="notice Icon" />
+        <h3>Important Announcement</h3>
+        <p>
+          This is an important announcement that requires the attention of all
+          members.
+        </p>
+        <p>Date: January 3, 2024</p>
+      </div>
+
+      <div class="announcement">
+        <img src="voice speaker.jpg" alt="announcement Icon" />
+        <h3>Reminder: Upcoming Event</h3>
+        <p>
+          Don't forget about the upcoming event happening next week. Make sure
+          to mark your calendars!
+        </p>
+        <p>Date: January 4, 2024</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024 Motswakhumo Junior Secondary School. All Rights Reserved.
+      </p>
+      <p>Coded by Gaamangwe Motsamai</p>
+    </footer>
+  </body>
+</html>

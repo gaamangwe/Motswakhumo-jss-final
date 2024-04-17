@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOTSWAKHUMO COMMUNITY JUNIOR SECONDARY SCHOOL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="assistant.css">
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>
+    
+    <div id="divmaincontainer" class="master">
+      <div id="divbanner" class="master">
+        <div class="notification-bar">
+          <p>
+            <strong>Important:</strong> School will be closed on Friday,
+            February 28th, for a staff training day.
+          </p>
+        </div>
+        <a href="home.html"></a>
+        <h4>MOTSWAKHUMO JUNIOR SECONDARY SCHOOL</h4>
+        <span>Thuto tsela ya botshelo.</span>
+      </div>
+      <div id="divmenu" class="master">
+        <nav id="navmenu">
+          <ul id="ulmenu">
+            <li><a href="MJSS.html">HOME</a></li>
+            <li><a href="documents.html">DOCUMENTS</a></li>
+            <li><a href="news.html">NEWS&PUBLIC NOTICES</a></li>
+            <li><a href="contacts.html">CONTACT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="assistant-container">
+      <div class="assistant">
+  <div class="conversation" id="conversation">
+    <p>Welcome! How can I assist you today?</p>
+  </div>
+  <input type="text" id="input" placeholder="Ask me anything...">
+  <button id="searchButton">Search</button> <!-- Add this line -->
+</div>
+
+    </div>
+        <div id="slideshow-container">
+          <div class="slideshow-image">
+            <p>Hame Motsamai, BEST OVERALL STUDENT✨</p>
+            <img src="student1.jpg" alt="s1" />
+          </div>
+          <div class="slideshow-image">
+            <p>Miss Majuta, BEST OVERALL TEACHER✨</p>
+            <img src="teacher.jpg" alt="t1" />
+          </div>
+          <div class="slideshow-image">
+            <p>Motswakhumo JSS SCHOOL CHOIR😊</p>
+            <img src="choir.jpg" alt="Classroom" />
+          </div>
+          <div class="slideshow-image">
+            <p>
+              MEET THE OVERALL BEST PERFORMING HOUSE IN ACADEMICS,KHAMA HOUSE!!
+              😊
+            </p>
+            <img src="student3.jpg" alt="Classroom" />
+          </div>
+          <div class="slideshow-image">
+            <p>BEST OVERALL STUDENTS PER HOUSE✨</p>
+            <img src="best students.jpg" alt="Classroom" />
+          </div>
+          <div class="slideshow-image">
+            <p>
+              MEET THE OVERALL BEST PERFORMING HOUSE IN SPORTS,SECHELE HOUSE!!
+              😊
+            </p>
+            <img src="sports.jpg" alt="Classroom" />
+          </div>
+        </div>
+      </div>
+      
+    </div>
+      <div id="divfooter" class="master">
+        <p id="pfooter">MOTSWAKHUMOjss@copyright-2024</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+     <script src="assistant.js" defer></script> <!-- Add assistant script -->
+    <script>
+           // Add event listener to the search button
+      document.getElementById("searchButton").addEventListener("click", function() {
+        // Retrieve the input value
+        var searchQuery = document.getElementById("input").value;
+        // Perform actions based on the search query (e.g., display search results)
+        console.log("Search query:", searchQuery);
+        // Add your search functionality here
+        });
+    </script>
+  </body>
+</html>

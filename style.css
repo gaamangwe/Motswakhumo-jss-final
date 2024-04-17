@@ -1,0 +1,347 @@
+/* Reset default margin and padding */
+body,
+h4 {
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  background-color: lightblue;
+}
+span {
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: lightblue;
+}
+
+/* Style the header */
+
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: turquoise;
+  text-decoration: none;
+}
+
+/* Style the dropdown menu */
+#divmenu {
+  background-color: white;
+  color: navy;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid black; /* Add a top border */
+  border-bottom: 2px solid black; /* Add a bottom border */
+}
+
+#ulmenu {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ulmenu li {
+  display: inline;
+  margin-right: 10px; /* Reduce margin between menu items */
+}
+
+#ulmenu li a {
+  text-decoration: none;
+  color: navy;
+  font-size: 14px; /* Reduce font size of menu items */
+  padding: 5px 10px; /* Adjust padding of menu items */
+  font-weight: bold; /* Make menu items bold */
+  font-style: italic; /* Make menu items italic */
+}
+
+#ulmenu li a:hover {
+  background-color: gold;
+  color: navy;
+  border-radius: 4px;
+}
+
+/* Styles for the notification bar */
+.notification-bar {
+  background-color: white; /* Light gray background color */
+  color: navy; /* Dark gray text color */
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.notification-bar p {
+  display: inline;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Main container styles */
+#divmaincontainer {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid black; /* Add a border around the main container */
+  margin: 30px; /* Add margin to create space around the main container */
+}
+
+/* Rest of your existing CSS styles */
+
+/* Global styles */
+a {
+  text-decoration: none;
+  color: navy;
+}
+a:hover {
+  color: darkblue;
+}
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: navy;
+}
+h2 {
+  color: navy;
+  margin-top: 30px;
+}
+p {
+  color: navy;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Lucida Sans Regu Verdana";
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+li a {
+  color: lightskyblue;
+}
+
+li a:hover {
+  color: black;
+}
+
+.master {
+  background-color: lightskyblue;
+  padding: 20px;
+}
+
+.master h4 {
+  color: black;
+}
+
+/* About Us page styles */
+#about-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Document page styles */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* News page styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-item,
+.announcement {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.news-item h3,
+.announcement h3 {
+  color: navy;
+}
+
+.news-item p,
+.announcement p {
+  color: green;
+  background-color: white;
+}
+
+.news-item p:last-child,
+.announcement p:last-child {
+  margin-bottom: 0;
+}
+
+.doc-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7; /* Change color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.doc-button img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.doc-button:hover {
+  background-color: #1356a9; /* Change hover color as needed */
+}
+.doc-links {
+  display: flex; /* Change the display property to flex */
+  justify-content: center; /* Align items horizontally in the center */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.doc-links a {
+  margin-right: 10px; /* Add some space between document links */
+}
+
+.doc-links img {
+  width: 24px; /* Adjust the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+/* Contact Us page styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.contact-info h2 {
+  color: navy;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+/* Gallery page styles */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Add the new styles for document links and buttons */
+.doc-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.doc-links img {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.aboutButton {
+  background-color: navy;
+  color: navy;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.aboutButton:hover {
+  background-color: gold;
+}
+/* Styles for the slideshow container */
+#slideshow-container {
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.slideshow-image img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Add CSS styles for the animated graphic */
+.animated-graphic {
+  position: absolute;
+  top: 50%;
+  left: -80%;
+  transform: translateX(-80%);
+  z-index: 9999;
+  /* Add other styling properties as needed */
+}

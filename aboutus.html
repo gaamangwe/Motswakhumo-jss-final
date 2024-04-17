@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Motswakhumo Junior Secondary School</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        background-color: lightblue;
+        padding: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .content-item {
+        text-align: center;
+        width: calc(25% - 20px);
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ccc;
+      }
+
+      .content-item img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .dropbtn {
+        background-color: lightblue;
+        color: navy;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        font-weight: bold;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: left; /* Adjust alignment */
+      }
+
+      /* Style the dropdown */
+      .dropdown a {
+        color: rgb(58, 13, 48);
+        padding: 11px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #6200ff;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content p {
+        padding: 10px;
+        margin: 0;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About Us</h1>
+
+    <div id="divmenu" class="master">
+      <nav id="navmenu">
+        <ul id="ulmenu">
+          <li><a href="#MJSS">HOME</a></li>
+          <li><a href="#aboutus">ABOUT US</a></li>
+          <li><a href="#documents">DOCUMENTS</a></li>
+          <li><a href="#news">NEWS & PUBLIC NOTICES</a></li>
+          <li><a href="#contacts">CONTACT US</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="content-item">
+        <img src="stafficon.png" alt="Staff Icon" />
+        <h2 id="staff">Staff</h2>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('teachingStaff')">
+            Teaching Staff
+          </button>
+          <div id="teachingStaff" class="dropdown-content">
+            <a href="schoolhead.html">School head</a>
+            <a href="deputy.html">Deputy school head</a>
+            <a href="senior.html">Senior teachers</a>
+            <a href="teachers.html">Teachers</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown('nonTeachingStaff')">
+            Non-Teaching Staff
+          </button>
+          <div id="nonTeachingStaff" class="dropdown-content">
+            <a href="officers.html">Officers</a>
+            <a href="boarding.html">Boarding Management</a>
+            <a href="kitchen.html">Kitchen department</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <img src="class-monitor.png" alt="Prefects Icon" />
+        <h2 id="prefects">SRC</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Members</button>
+          <div class="dropdown-content">
+            <a href="president.html">President</a>
+            <a href="vicepres.html">Vice President</a>
+            <a href="secretary.html">Secretary General</a>
+            <a href="vicesecre.html">Vice Secretary General</a>
+            <a href="ministers.html">Ministers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <img src="midnight.png" alt="School Times Icon" />
+        <h2 id="school-times">School Times</h2>
+        <p>
+          school starts at 06:30(Morning study) lessons starts from 07:50 am to
+          4:00 pm with tea break and lunch in between the lessons
+        </p>
+      </div>
+
+      <div class="content-item">
+        <img src="scroll.png" alt="Our History Icon" />
+        <h2 id="history">Our History</h2>
+        <p>
+          Motswakhumo CJSS was established in 1976,opened by... The school
+          scooped some positions in sports and academics over the years.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024 Motswakhumo Junior Secondary School. All Rights Reserved.
+      </p>
+      <p>Coded by Gaamangwe Motsamai</p>
+    </footer>
+  </body>
+</html>
